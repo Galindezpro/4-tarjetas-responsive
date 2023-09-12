@@ -1,0 +1,122 @@
+:root {
+    /* ## Colors */
+    /* ### Primary */
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+    /* ### Neutral */
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+/* Fuentes */
+--fuente: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 90px;
+}
+
+.contenedor__general {
+    max-width: 1400px;
+    /* padding: 12em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    font-family: var(--fuente);
+}
+
+.contenido .texto {
+    width: 85%;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.contenido .texto .texto__titulo {
+    font-weight: 200;
+    font-size: 1.55em;
+    color: var(--Very-Dark-Blue);
+    line-height: 40px;
+}
+
+.contenido .texto .texto__span {
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.contenido .texto .texto__parrafo {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: .97em;
+    color: var(--Grayish-Blue);
+}
+
+.contenido .tarjetas {
+    width: 85%;
+    margin-top: 40px;
+    position: relative;
+}
+
+.contenido .tarjetas .tarjeta__x {
+    margin: 25px  0;
+    height: 290px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 20px;
+    box-shadow: 0 10px 10px 3px var(--Grayish-Blue);
+    border-radius: 10px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.contenido .tarjetas .tarjetas__h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 1.35em;
+    margin-bottom: 15px;
+}
+
+.contenido .tarjetas .tarjetas__p {
+    color: var(--Grayish-Blue);
+    font-size: .9em;
+    margin-bottom: 30px;
+}
+
+.contenido .tarjetas .tarjetas__img {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+
+.contenido .tarjetas .tarjetas__supervisor {
+    border-top: 4px solid var(--Blue);
+}
+
+.contenido .tarjetas .tarjetas__teambuilder {
+    border-top: 4px solid var(--Red);
+}
+
+.contenido .tarjetas .tarjetas__karma {
+    border-top: 4px solid var(--Orange);
+}
+
+.contenido .tarjetas .tarjetas__calculator {
+    border-top: 4px solid var(--Cyan);
+}
