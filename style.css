@@ -67,6 +67,10 @@ img {
 }
 
 .contenido .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 85%;
     margin-top: 40px;
     position: relative;
@@ -75,6 +79,7 @@ img {
 .contenido .tarjetas .tarjeta__x {
     margin: 25px  0;
     height: 290px;
+    max-width: 350px;
     line-height: 30px;
     display: flex;
     flex-direction: column;
@@ -119,4 +124,60 @@ img {
 
 .contenido .tarjetas .tarjetas__calculator {
     border-top: 4px solid var(--Cyan);
+}
+
+@media screen and (min-width: 850px) {
+    .contenido .tarjetas .tarjeta__x {
+        transition: all 1s ease .1s;
+
+    }
+
+    .contenido .tarjetas .tarjetas__supervisor {
+        right: 200px;
+    }
+
+    .contenido .tarjetas .tarjetas__supervisor:hover {
+        max-width: 500px;
+        height: 400px;
+        width: 500px;
+        
+    }
+
+    .contenido .tarjetas .tarjetas__supervisor:not(:hover) {
+        width: 350px;
+    }
+    
+    .contenido .tarjetas .tarjetas__teambuilder {
+        left: 200px;
+    }
+
+    .contenido .tarjetas .tarjetas__teambuilder:hover {
+        max-width: 500px;
+        height: 400px;
+        width: 500px;
+        
+    }
+    
+    .contenido .tarjetas .tarjetas__karma {
+        right: 200px;
+    }
+
+    .contenido .tarjetas .tarjetas__karma:hover {
+        max-width: 500px;
+        height: 400px;
+        width: 500px;
+    }
+    
+    .contenido .tarjetas .tarjetas__karma:not(:hover) {
+        width: 350px;
+    }
+    .contenido .tarjetas .tarjetas__calculator {
+        left: 200px;
+    }
+
+    .contenido .tarjetas .tarjetas__calculator:hover {
+        max-width: 500px;
+        height: 400px;
+        width: 500px;
+    }
 }
