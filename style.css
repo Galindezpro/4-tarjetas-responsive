@@ -37,8 +37,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 97%;
+    width: 90%;
     font-family: var(--fuente);
+
 }
 
 .contenido .texto {
@@ -128,7 +129,7 @@ img {
 
 @media screen and (min-width: 850px) {
     .contenido .tarjetas .tarjeta__x {
-        transition: all 1s ease .1s;
+        transition: all 1s ease;
 
     }
 
@@ -136,48 +137,79 @@ img {
         right: 200px;
     }
 
-    .contenido .tarjetas .tarjetas__supervisor:hover {
+    /* .contenido .tarjetas .tarjetas__supervisor:hover {
         max-width: 500px;
         height: 400px;
         width: 500px;
-        
-    }
-
+        margin-left: 70px;
+    } */
+/* 
     .contenido .tarjetas .tarjetas__supervisor:not(:hover) {
         width: 350px;
-    }
+    } */
     
     .contenido .tarjetas .tarjetas__teambuilder {
         left: 200px;
     }
 
-    .contenido .tarjetas .tarjetas__teambuilder:hover {
+    /* .contenido .tarjetas .tarjetas__teambuilder:hover {
         max-width: 500px;
         height: 400px;
         width: 500px;
+        margin-right: 70px;
         
-    }
+    } */
     
     .contenido .tarjetas .tarjetas__karma {
         right: 200px;
     }
 
-    .contenido .tarjetas .tarjetas__karma:hover {
+    /* .contenido .tarjetas .tarjetas__karma:hover {
         max-width: 500px;
         height: 400px;
         width: 500px;
-    }
+        margin-left: 70px;
+    } */
     
-    .contenido .tarjetas .tarjetas__karma:not(:hover) {
+    /* .contenido .tarjetas .tarjetas__karma:not(:hover) {
         width: 350px;
-    }
+    } */
+
     .contenido .tarjetas .tarjetas__calculator {
         left: 200px;
     }
 
-    .contenido .tarjetas .tarjetas__calculator:hover {
+    /* .contenido .tarjetas .tarjetas__calculator:hover {
         max-width: 500px;
         height: 400px;
         width: 500px;
+        margin-right: 70px;
+    } */
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .contenido .tarjetas .tarjeta__x {
+        width: 310px;
+    }
+
+    .contenido .tarjetas .tarjetas__supervisor {
+        left: -330px;
+        top: 200px;
+    }
+
+    .contenido .tarjetas .tarjetas__teambuilder {
+        top: -300px;
+        left: .1px;
+    }
+
+    .contenido .tarjetas .tarjetas__karma {
+        bottom: 320px;
+        left: .1px;
+    }
+
+    .contenido .tarjetas .tarjetas__calculator {
+        bottom: 820px;
+        left: 330px;
     }
 }
