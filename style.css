@@ -129,7 +129,7 @@ img {
 
 @media screen and (min-width: 850px) {
     .contenido .tarjetas .tarjeta__x {
-        transition: all 1s ease;
+        transition: all .7s ease;
 
     }
 
